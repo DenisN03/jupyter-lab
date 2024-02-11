@@ -1,0 +1,17 @@
+version: '2.4'
+services:
+  ada:
+    image: jupyter-lab
+    container_name: jupyter-lab
+    runtime: nvidia
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+    - JUPYTER_TOKEN=python
+    ports:
+      - "8889:8888"
+    volumes:
+      - ./data/:/app/data/
+      - ./notebooks/:/app/notebooks/
+    restart: always

@@ -1,0 +1,34 @@
+# Base ----------------------------------------
+matplotlib>=3.2.2
+numpy==1.22.2
+opencv-python==4.5.5.64
+Pillow>=7.1.2
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+tqdm>=4.64.0
+protobuf==3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+python-magic==0.4.27
+
+# Plotting ------------------------------------
+pandas>=1.1.4
+seaborn>=0.11.0
+
+# Export ----------------------------------------------------------------------
+onnx==1.12.0  # ONNX export
+onnxruntime==1.10.0
+onnxruntime-gpu==1.10.0
+onnx-simplifier==0.4.13  # ONNX simplifier
+nvidia-pyindex==1.0.9  # TensorRT export
+nvidia-tensorrt==8.4.3.1  # TensorRT export
+
+# Extras --------------------------------------
+psutil  # system utilization
+thop>=0.1.1  # FLOPs computation
+ipywidgets==7.7.2
+jupyterlab_widgets==1.1.1
+jupyterlab
+widgetsnbextension==3.6.1
+albumentations==1.1.0
+gitpython==3.1.30
+yolov5==6.0.1
